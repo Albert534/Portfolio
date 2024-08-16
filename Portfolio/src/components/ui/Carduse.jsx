@@ -29,7 +29,7 @@ export default function AnimatedPinDemo() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch("http://localhost:8080/Projects");
+      const response = await fetch("https://portfo-backend22.onrender.com/Projects");
       const data = await response.json();
       setData(data);
       console.log("Fetched Data:", data);
