@@ -13,7 +13,7 @@ export default function BentoGridSecondDemo() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:8080/");
+        const res = await fetch("https://portfo-backend22.onrender.com/");
         const data = await res.json();
         setServices(data);
         console.log(data);
